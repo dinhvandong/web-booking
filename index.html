@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA - Fine Dining & Lounge | Đặt Bàn Trực Tuyến</title>
+    <meta name="description" content="Trải nghiệm ẩm thực thượng hạng tại AURA Fine Dining & Lounge. Đặt bàn trực tuyến nhanh chóng, lựa chọn không gian và dịch vụ hoàn hảo cho bữa tiệc của bạn.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-title">AURA</span>
+                <span class="logo-sub">FINE DINING</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Trang Chủ</a>
+                <a href="#about" class="nav-link">Giới Thiệu</a>
+                <a href="#menu" class="nav-link">Thực Đơn</a>
+                <a href="#booking" class="nav-link nav-btn-scroll">Đặt Bàn</a>
+                <a href="#history" class="nav-link">Lịch Sử Đặt</a>
+            </nav>
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Mở Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav-overlay">
+        <button class="close-mobile-menu" id="close-mobile-btn">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="#hero" class="mobile-link">Trang Chủ</a>
+        <a href="#about" class="mobile-link">Giới Thiệu</a>
+        <a href="#menu" class="mobile-link">Thực Đơn</a>
+        <a href="#booking" class="mobile-link">Đặt Bàn</a>
+        <a href="#history" class="mobile-link">Lịch Sử Đặt</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-subtitle">MỸ VỊ GIAO THOA • TRẢI NGHIỆM ĐẲNG CẤP</span>
+            <h1 class="hero-title">Khám Phá Nghệ Thuật<br>Ẩm Thực Thượng Hạng</h1>
+            <p class="hero-desc">Chào mừng bạn đến với AURA, nơi mỗi món ăn là một tác phẩm nghệ thuật, mỗi bữa tiệc là một hành trình xúc cảm khó quên.</p>
+            <div class="hero-actions">
+                <a href="#booking" class="btn btn-primary">Đặt Bàn Ngay <i data-lucide="arrow-right"></i></a>
+                <a href="#menu" class="btn btn-secondary">Xem Thực Đơn</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Cuộn xuống</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container grid-2">
+            <div class="about-info">
+                <span class="section-subtitle">VỀ CHÚNG TÔI</span>
+                <h2 class="section-title">Câu Chuyện Về Sự Hoàn Mỹ</h2>
+                <p class="section-desc">Tại AURA, chúng tôi kết hợp tinh hoa ẩm thực Á Đông truyền thống cùng kỹ nghệ chế biến hiện đại của ẩm thực Pháp cổ điển. Mỗi nguyên liệu được chọn lựa kỹ lưỡng từ các nông trại hữu cơ bản địa và nguồn thủy hải sản cao cấp nhập khẩu.</p>
+                <div class="about-features">
+                    <div class="feat-item">
+                        <div class="feat-icon"><i data-lucide="chef-hat"></i></div>
+                        <div>
+                            <h4>Bếp Trưởng Đạt Sao Michelin</h4>
+                            <p>Các món ăn được sáng tạo bởi các đầu bếp đẳng cấp quốc tế.</p>
+                        </div>
+                    </div>
+                    <div class="feat-item">
+                        <div class="feat-icon"><i data-lucide="sparkles"></i></div>
+                        <div>
+                            <h4>Không Gian Sang Trọng</h4>
+                            <p>Kiến trúc tối giản tinh tế mang lại cảm giác ấm cúng, sang trọng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-images">
+                <div class="img-wrapper main-img">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800" alt="Restaurant Interior" loading="lazy">
+                </div>
+                <div class="img-wrapper sub-img">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600" alt="Exquisite Dish" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">THỰC ĐƠN ĐẶC SẮC</span>
+                <h2 class="section-title">Tinh Hoa Hương Vị</h2>
+            </div>
+
+            <!-- Menu Filters -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">Tất Cả</button>
+                <button class="filter-btn" data-category="starters">Khai Vị</button>
+                <button class="filter-btn" data-category="mains">Món Chính</button>
+                <button class="filter-btn" data-category="desserts">Tráng Miệng</button>
+                <button class="filter-btn" data-category="drinks">Đồ Uống</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-items-container">
+                <!-- Item 1: Starter -->
+                <div class="menu-card" data-category="starters">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=500" alt="Salmon Salad" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Salad Cá Hồi Aura</h3>
+                            <span class="price">285.000đ</span>
+                        </div>
+                        <p class="menu-card-desc">Cá hồi tươi thái mỏng sốt cam dây, trứng cá chuồn, rau mầm hữu cơ và quả bơ thái lát.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Starter -->
+                <div class="menu-card" data-category="starters">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1607532941433-304659e8198a?auto=format&fit=crop&q=80&w=500" alt="Foie Gras" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Gan Ngỗng Áp Chảo</h3>
+                            <span class="price">490.000đ</span>
+                        </div>
+                        <p class="menu-card-desc">Gan ngỗng Pháp áp chảo, ăn kèm sốt dâu rừng đỏ, táo caramel và bánh mì brioche nướng giòn.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Main -->
+                <div class="menu-card" data-category="mains">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=500" alt="Wagyu Steak" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Bò Wagyu Thượng Hạng</h3>
+                            <span class="price">1.850.000đ</span>
+                        </div>
+                        <p class="menu-card-desc">Thịt bò Wagyu A5 nướng than hoa Binchotan, khoai tây nghiền truffle đen, măng tây và sốt vang đỏ Bordeaux.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Main -->
+                <div class="menu-card" data-category="mains">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=500" alt="Lobster" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Tôm Hùm Đút Lò Phô Mai</h3>
+                            <span class="price">1.250.000đ</span>
+                        </div>
+                        <p class="menu-card-desc">Tôm hùm Nha Trang đút lò với xốt kem phô mai Gruyère thượng hạng, dùng kèm nấm đùi gà nướng thảo mộc.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: Dessert -->
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&q=80&w=500" alt="Chocolate Lava" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Bánh Sô-cô-la Dung Nham</h3>
+                            <span class="price">220.000đ</span>
+                        </div>
+                        <p class="menu-card-desc">Bánh sô-cô-la đen Valrhona nhân chảy ấm áp, phục vụ kèm kem vani Madagascar và quả mâm xôi tươi.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6: Drinks -->
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=500" alt="Cocktail Gold" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Signature Golden Aura</h3>
+                            <span class="price">195.000đ</span>
+                        </div>
+                        <p class="menu-card-desc">Sự pha trộn giữa rượu Gin hảo hạng, nước ép bưởi hồng tươi, mật ong hoa nhãn và vẩy vàng 24k lấp lánh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">ĐẶT BÀN TRỰC TUYẾN</span>
+                <h2 class="section-title">Đặt Chỗ Trải Nghiệm</h2>
+                <p class="booking-intro">Hãy đặt bàn trước để chúng tôi chuẩn bị đón tiếp bạn chu đáo nhất.</p>
+            </div>
+
+            <div class="booking-wizard-card">
+                <!-- Stepper Progress Header -->
+                <div class="booking-steps">
+                    <div class="step-indicator active" data-step="1">
+                        <span class="step-num">1</span>
+                        <span class="step-name">Thời Gian</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="2">
+                        <span class="step-num">2</span>
+                        <span class="step-name">Chọn Bàn</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="3">
+                        <span class="step-num">3</span>
+                        <span class="step-name">Thông Tin</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="4">
+                        <span class="step-num">4</span>
+                        <span class="step-name">Hoàn Tất</span>
+                    </div>
+                </div>
+
+                <!-- Wizard Content Panels -->
+                <div class="wizard-panels">
+
+                    <!-- STEP 1: Time, Date & Guest Count -->
+                    <div class="wizard-panel active" id="panel-step-1">
+                        <h3 class="panel-title">Chọn Thời Gian & Số Lượng Khách</h3>
+                        <div class="form-grid-3">
+                            <div class="form-group">
+                                <label for="booking-date"><i data-lucide="calendar"></i> Ngày dùng bữa</label>
+                                <input type="date" id="booking-date" required>
+                                <span class="input-error" id="error-date">Vui lòng chọn ngày trong tương lai</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="booking-time"><i data-lucide="clock"></i> Giờ đặt bàn</label>
+                                <select id="booking-time" required>
+                                    <option value="" disabled selected>Chọn khung giờ</option>
+                                    <optgroup label="Bữa Trưa (11:00 - 14:00)">
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                    </optgroup>
+                                    <optgroup label="Bữa Tối (17:00 - 22:00)">
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                    </optgroup>
+                                </select>
+                                <span class="input-error" id="error-time">Vui lòng chọn giờ đặt bàn</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="booking-guests"><i data-lucide="users"></i> Số lượng khách</label>
+                                <select id="booking-guests" required>
+                                    <option value="" disabled selected>Chọn số người</option>
+                                    <option value="1">1 Khách</option>
+                                    <option value="2">2 Khách (Hẹn hò)</option>
+                                    <option value="4">4 Khách (Gia đình nhỏ)</option>
+                                    <option value="6">6 Khách (Nhóm/Họp mặt)</option>
+                                    <option value="8">8 Khách (Gia đình lớn)</option>
+                                    <option value="10">10+ Khách (Liên hệ hỗ trợ)</option>
+                                </select>
+                                <span class="input-error" id="error-guests">Vui lòng chọn số lượng khách</span>
+                            </div>
+                        </div>
+
+                        <div class="wizard-footer">
+                            <div></div> <!-- Spacer -->
+                            <button type="button" class="btn btn-primary btn-next" id="btn-goto-step2">Tiếp Tục <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Visual Table Selector -->
+                    <div class="wizard-panel" id="panel-step-2">
+                        <div class="panel-header-flex">
+                            <h3 class="panel-title">Lựa Chọn Bàn & Khu Vực</h3>
+                            <!-- Floor Legend -->
+                            <div class="floor-legend">
+                                <span class="legend-item"><span class="legend-box available"></span> Trống</span>
+                                <span class="legend-item"><span class="legend-box occupied"></span> Đang Đặt</span>
+                                <span class="legend-item"><span class="legend-box selected"></span> Đang Chọn</span>
+                            </div>
+                        </div>
+
+                        <!-- Zone Tabs -->
+                        <div class="zone-tabs">
+                            <button class="zone-tab active" data-zone="main-hall">Sảnh Chính (Main Hall)</button>
+                            <button class="zone-tab" data-zone="vip-room">Phòng VIP (Private & Luxury)</button>
+                            <button class="zone-tab" data-zone="terrace">Ban Công (Terrace View)</button>
+                        </div>
+
+                        <!-- Floor Plan Workspace -->
+                        <div class="floor-plan-container">
+                            <div class="floor-stage">BÁN NGUYỆT SÂN KHẤU</div>
+                            
+                            <!-- Zones -->
+                            <div class="floor-grid active" id="zone-main-hall">
+                                <!-- Tables Layout (Main Hall: 8 tables) -->
+                                <div class="table-node" data-table-id="M1" data-seats="2" data-status="available">
+                                    <div class="table-shape circle">M1</div>
+                                    <span class="table-seats-count">2 Ghế</span>
+                                </div>
+                                <div class="table-node" data-table-id="M2" data-seats="2" data-status="available">
+                                    <div class="table-shape circle">M2</div>
+                                    <span class="table-seats-count">2 Ghế</span>
+                                </div>
+                                <div class="table-node" data-table-id="M3" data-seats="4" data-status="occupied">
+                                    <div class="table-shape rectangle">M3</div>
+                                    <span class="table-seats-count">4 Ghế</span>
+                                </div>
+                                <div class="table-node" data-table-id="M4" data-seats="4" data-status="available">
+                                    <div class="table-shape rectangle">M4</div>
+                                    <span class="table-seats-count">4 Ghế</span>
+                                </div>
+                                <div class="table-node" data-table-id="M5" data-seats="6" data-status="available">
+                                    <div class="table-shape rectangle-large">M5</div>
+                                    <span class="table-seats-count">6 Ghế</span>
+                                </div>
+                                <div class="table-node" data-table-id="M6" data-seats="6" data-status="occupied">
+                                    <div class="table-shape rectangle-large">M6</div>
+                                    <span class="table-seats-count">6 Ghế</span>
+                                </div>
+                                <div class="table-node" data-table-id="M7" data-seats="4" data-status="available">
+                                    <div class="table-shape rectangle">M7</div>
+                                    <span class="table-seats-count">4 Ghế</span>
+                                </div>
+                                <div class="table-node" data-table-id="M8" data-seats="8" data-status="available">
+                                    <div class="table-shape circle-large">M8</div>
+                                    <span class="table-seats-count">8 Ghế</span>
+                                </div>
+                            </div>
+
+                            <div class="floor-grid" id="zone-vip-room">
+                                <!-- Tables Layout (VIP: 4 luxury rooms) -->
+                                <div class="table-node vip" data-table-id="VIP-Royal" data-seats="6" data-status="available">
+                                    <div class="table-shape gold-box">VIP 1</div>
+                                    <span class="table-seats-count">Royal (6 Ghế)</span>
+                                </div>
+                                <div class="table-node vip" data-table-id="VIP-President" data-seats="10" data-status="available">
+                                    <div class="table-shape gold-box-large">VIP 2</div>
+                                    <span class="table-seats-count">President (10 Ghế)</span>
+                                </div>
+                                <div class="table-node vip" data-table-id="VIP-Imperial" data-seats="8" data-status="occupied">
+                                    <div class="table-shape gold-box">VIP 3</div>
+                                    <span class="table-seats-count">Imperial (8 Ghế)</span>
+                                </div>
+                                <div class="table-node vip" data-table-id="VIP-Lotus" data-seats="4" data-status="available">
+                                    <div class="table-shape gold-box">VIP 4</div>
+                                    <span class="table-seats-count">Lotus (4 Ghế)</span>
+                                </div>
+                            </div>
+
+                            <div class="floor-grid" id="zone-terrace">
+                                <!-- Tables Layout (Terrace: 6 romantic tables) -->
+                                <div class="table-node romantic" data-table-id="T1" data-seats="2" data-status="available">
+                                    <div class="table-shape circle-glow">T1</div>
+                                    <span class="table-seats-count">Glass-edge (2 Ghế)</span>
+                                </div>
+                                <div class="table-node romantic" data-table-id="T2" data-seats="2" data-status="available">
+                                    <div class="table-shape circle-glow">T2</div>
+                                    <span class="table-seats-count">Glass-edge (2 Ghế)</span>
+                                </div>
+                                <div class="table-node romantic" data-table-id="T3" data-seats="2" data-status="occupied">
+                                    <div class="table-shape circle-glow">T3</div>
+                                    <span class="table-seats-count">Glass-edge (2 Ghế)</span>
+                                </div>
+                                <div class="table-node romantic" data-table-id="T4" data-seats="4" data-status="available">
+                                    <div class="table-shape rectangle-glow">T4</div>
+                                    <span class="table-seats-count">Garden View (4 Ghế)</span>
+                                </div>
+                                <div class="table-node romantic" data-table-id="T5" data-seats="4" data-status="available">
+                                    <div class="table-shape rectangle-glow">T5</div>
+                                    <span class="table-seats-count">Garden View (4 Ghế)</span>
+                                </div>
+                                <div class="table-node romantic" data-table-id="T6" data-seats="6" data-status="available">
+                                    <div class="table-shape rectangle-glow-large">T6</div>
+                                    <span class="table-seats-count">Sunset View (6 Ghế)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feedback Message -->
+                        <div class="selected-table-info" id="selected-table-message">
+                            Chưa có bàn nào được chọn. Vui lòng bấm vào bàn trống trên sơ đồ.
+                        </div>
+
+                        <div class="wizard-footer">
+                            <button type="button" class="btn btn-secondary btn-prev" id="btn-back-to-step1"><i data-lucide="arrow-left"></i> Quay Lại</button>
+                            <button type="button" class="btn btn-primary btn-next" id="btn-goto-step3">Tiếp Tục <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Contact & Special Request Form -->
+                    <div class="wizard-panel" id="panel-step-3">
+                        <h3 class="panel-title">Thông Tin Liên Hệ & Yêu Cầu Đặc Biệt</h3>
+                        
+                        <div class="booking-form">
+                            <div class="form-grid-2">
+                                <div class="form-group">
+                                    <label for="cust-name">Họ và tên *</label>
+                                    <input type="text" id="cust-name" placeholder="Nguyễn Văn A" required>
+                                    <span class="input-error" id="error-cust-name">Vui lòng nhập họ tên hợp lệ</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="cust-phone">Số điện thoại *</label>
+                                    <input type="tel" id="cust-phone" placeholder="0901234567" required>
+                                    <span class="input-error" id="error-cust-phone">Vui lòng nhập số điện thoại 10 số</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cust-email">Địa chỉ Email *</label>
+                                <input type="email" id="cust-email" placeholder="example@gmail.com" required>
+                                <span class="input-error" id="error-cust-email">Vui lòng nhập email chính xác</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cust-notes">Yêu cầu đặc biệt (Không bắt buộc)</label>
+                                <textarea id="cust-notes" rows="4" placeholder="VD: Bàn kỷ niệm ngày cưới, chuẩn bị ghế trẻ em, dị ứng hải sản..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="cust-terms" required>
+                                <label for="cust-terms">Tôi đồng ý với điều khoản đặt chỗ và cam kết đến đúng giờ hạn (Quá 15 phút không báo trước bàn sẽ tự động hủy).</label>
+                                <span class="input-error" id="error-cust-terms">Bạn phải đồng ý với điều khoản đặt bàn</span>
+                            </div>
+                        </div>
+
+                        <div class="wizard-footer">
+                            <button type="button" class="btn btn-secondary btn-prev" id="btn-back-to-step2"><i data-lucide="arrow-left"></i> Quay Lại</button>
+                            <button type="button" class="btn btn-primary btn-next" id="btn-submit-booking">Xác Nhận Đặt Bàn <i data-lucide="check"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: Success Ticket Presentation -->
+                    <div class="wizard-panel text-center" id="panel-step-4">
+                        <div class="success-animation">
+                            <div class="success-icon-wrap">
+                                <i data-lucide="check-circle-2"></i>
+                            </div>
+                        </div>
+                        <h3 class="success-title">Đặt Bàn Thành Công!</h3>
+                        <p class="success-subtitle">Một email xác nhận chi tiết đã được gửi tới hòm thư của bạn.</p>
+
+                        <!-- Ticket Component -->
+                        <div class="ticket-container">
+                            <div class="ticket">
+                                <div class="ticket-top">
+                                    <div class="ticket-brand">
+                                        <h3>AURA</h3>
+                                        <p>FINE DINING & LOUNGE</p>
+                                    </div>
+                                    <div class="ticket-id-wrap">
+                                        <span class="ticket-id-label">MÃ ĐẶT BÀN</span>
+                                        <span class="ticket-id-val" id="ticket-code">#AR-784910</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-divider">
+                                    <span class="ticket-cut left"></span>
+                                    <span class="ticket-line"></span>
+                                    <span class="ticket-cut right"></span>
+                                </div>
+                                <div class="ticket-body">
+                                    <div class="ticket-grid">
+                                        <div class="ticket-item">
+                                            <span class="t-label">KHÁCH HÀNG</span>
+                                            <span class="t-val" id="ticket-cust-name">Nguyễn Văn A</span>
+                                        </div>
+                                        <div class="ticket-item">
+                                            <span class="t-label">ĐIỆN THOẠI</span>
+                                            <span class="t-val" id="ticket-cust-phone">0901234567</span>
+                                        </div>
+                                        <div class="ticket-item">
+                                            <span class="t-label">NGÀY ĐẶT</span>
+                                            <span class="t-val" id="ticket-date">19/06/2026</span>
+                                        </div>
+                                        <div class="ticket-item">
+                                            <span class="t-label">THỜI GIAN</span>
+                                            <span class="t-val" id="ticket-time">19:00</span>
+                                        </div>
+                                        <div class="ticket-item">
+                                            <span class="t-label">KHU VỰC</span>
+                                            <span class="t-val" id="ticket-zone">Sảnh Chính</span>
+                                        </div>
+                                        <div class="ticket-item">
+                                            <span class="t-label">BÀN SỐ</span>
+                                            <span class="t-val" id="ticket-table">M5 (6 Ghế)</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-notes-box">
+                                        <span class="t-label">GHI CHÚ ĐẶC BIỆT</span>
+                                        <p class="t-val-notes" id="ticket-notes">Không có ghi chú đặc biệt.</p>
+                                    </div>
+                                    
+                                    <!-- QR Code simulation -->
+                                    <div class="ticket-qr-section">
+                                        <div class="qr-code-placeholder" id="ticket-qr">
+                                            <!-- QR SVG generated here or styled representation -->
+                                            <div class="qr-mock-pixels"></div>
+                                        </div>
+                                        <p class="qr-tip">Đưa mã này cho nhân viên lễ tân khi đến nhà hàng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wizard-footer justify-center">
+                            <button type="button" class="btn btn-secondary" id="btn-book-another">Đặt Bàn Mới</button>
+                            <a href="#history" class="btn btn-primary" id="btn-view-history-scroll">Xem Lịch Sử Đặt Bàn</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking History / Dashboard -->
+    <section id="history" class="history-section">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <span class="section-subtitle">DÀNH CHO BẠN</span>
+                    <h2 class="section-title">Lịch Sử Đặt Bàn</h2>
+                    <p class="section-desc">Xem, quản lý hoặc hủy bỏ các lượt đặt chỗ của bạn tại AURA.</p>
+                </div>
+                <button class="btn btn-secondary" id="btn-clear-history"><i data-lucide="trash-2"></i> Xóa Tất Cả</button>
+            </div>
+
+            <!-- Booking Cards Container -->
+            <div class="history-grid" id="history-bookings-list">
+                <!-- Fallback empty state -->
+                <div class="empty-history" id="history-empty-state">
+                    <div class="empty-icon"><i data-lucide="calendar-off"></i></div>
+                    <h3>Bạn chưa có lịch đặt bàn nào</h3>
+                    <p>Mọi đặt bàn trực tuyến thành công sẽ được tự động ghi nhận lại ở đây.</p>
+                    <a href="#booking" class="btn btn-primary">Đặt Bàn Ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edit Reservation Modal -->
+    <div class="modal" id="edit-booking-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="btn-close-edit-modal"><i data-lucide="x"></i></button>
+            <h3 class="modal-title">Chỉnh Sửa Lịch Đặt Chỗ</h3>
+            
+            <form id="edit-booking-form">
+                <input type="hidden" id="edit-booking-id">
+                
+                <div class="form-grid-2">
+                    <div class="form-group">
+                        <label for="edit-date"><i data-lucide="calendar"></i> Ngày mới</label>
+                        <input type="date" id="edit-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-time"><i data-lucide="clock"></i> Giờ mới</label>
+                        <select id="edit-time" required>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-guests"><i data-lucide="users"></i> Số lượng khách</label>
+                    <select id="edit-guests" required>
+                        <option value="1">1 Khách</option>
+                        <option value="2">2 Khách</option>
+                        <option value="4">4 Khách</option>
+                        <option value="6">6 Khách</option>
+                        <option value="8">8 Khách</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-notes">Yêu cầu đặc biệt</label>
+                    <textarea id="edit-notes" rows="3"></textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-edit-modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Lưu Thay Đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container text-center">
+            <span class="section-subtitle">ĐÁNH GIÁ TỪ THỰC KHÁCH</span>
+            <h2 class="section-title">Nhận Xét & Cảm Nghĩ</h2>
+
+            <!-- Slider Wrapper -->
+            <div class="testimonials-slider-container">
+                <div class="testimonials-track" id="testimonials-track">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="t-text">“AURA thực sự là một viên ngọc giữa lòng thành phố. Từ không gian tối giản tinh tế, đội ngũ nhân viên đón tiếp nhiệt tình chu đáo, cho đến món Wagyu Steak mềm tan và đượm hương nướng than hoa. Tôi nhất định sẽ quay lại!”</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" alt="Customer Ava" loading="lazy">
+                            <div>
+                                <h4>Khánh Linh</h4>
+                                <span>Ẩm thực học & Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="t-text">“Không gian phòng VIP cực kỳ sang trọng và yên tĩnh, hoàn toàn đáp ứng được nhu cầu trao đổi đối tác và dùng bữa kín đáo của chúng tôi. Món gan ngỗng Pháp giòn ngoài béo ngậy bên trong kết hợp xốt dâu rất tuyệt vời.”</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" alt="Customer Ava" loading="lazy">
+                            <div>
+                                <h4>Trần Minh Hoàng</h4>
+                                <span>Doanh nhân</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="t-text">“Tôi đã đặt bàn ngắm hoàng hôn tại khu Ban công để kỷ niệm ngày cưới của vợ chồng mình. Dịch vụ tuyệt vời, bàn ăn trang trí nến lãng mạn sẵn và ly signature Cocktail Golden Aura lấp lánh vàng làm vợ tôi vô cùng hạnh phúc.”</p>
+                        <div class="t-author">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" alt="Customer Ava" loading="lazy">
+                            <div>
+                                <h4>Lê Hoàng Nam</h4>
+                                <span>Kỹ sư công nghệ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" id="slider-prev"><i data-lucide="chevron-left"></i></button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="slider-arrow next" id="slider-next"><i data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo">
+                    <span class="logo-title">AURA</span>
+                    <span class="logo-sub">FINE DINING</span>
+                </a>
+                <p class="footer-desc">Đem đến trải nghiệm ẩm thực tinh xảo vượt mọi mong đợi. Sứ mệnh của chúng tôi là tôn vinh bản sắc hương vị qua bàn tay nghệ thuật.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Khung Giờ Mở Cửa</h3>
+                <ul class="footer-list">
+                    <li><span class="day">Thứ Hai - Thứ Sáu</span> <span class="time">11:00 – 22:30</span></li>
+                    <li><span class="day">Thứ Bảy - Chủ Nhật</span> <span class="time">10:30 – 23:00</span></li>
+                    <li class="notice">* Bữa trưa ngưng nhận gọi món lúc 13:45</li>
+                    <li class="notice">* Bữa tối ngưng nhận gọi món lúc 21:30</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Liên Hệ Đặt Bàn</h3>
+                <ul class="footer-list contact-list">
+                    <li><i data-lucide="map-pin"></i> 18 Ngô Quyền, Tràng Tiền, Hoàn Kiếm, Hà Nội</li>
+                    <li><i data-lucide="phone"></i> +84 (0) 24 3824 1234</li>
+                    <li><i data-lucide="mail"></i> reservations@auradining.vn</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 AURA Restaurant. Thiết kế & Phát triển với niềm đam mê nghệ thuật ẩm thực.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
